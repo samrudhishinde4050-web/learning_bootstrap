@@ -13,7 +13,8 @@
   <body>
     <!-- Header start -->
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary" class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary"
+        class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"><img src="image/logo.png"
               alt="Bootstrap" width="50" height="45"> Coffee Shop</a>
@@ -49,7 +50,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">Gallery</a>
+                <a class="nav-link" href="gallery.html">Gallery</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">Service</a>
@@ -67,10 +68,203 @@
           </div>
         </div>
       </nav>
-      <h1>This is Home Page</h1>
+      <!-- <h1>This is Home Page</h1> -->
 
     </header>
     <!-- Header End -->
+
+    <!-- Slider section start -->
+    <main>
+      <section>
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+          </div>
+          <div class="carousel-inner carousel-fade">
+            <div class="carousel-item active ">
+              <img src="image/slider-5.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="image/slider-6.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="image/slider-11.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="image/slider-10.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button"
+            data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button"
+            data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </main>
+    <!-- Slider section end -->
+
+    <!-- About Section End -->
+    <section class="mt-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 p-4">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatem quidem doloremque delectus eveniet asperiores cumque
+              nihil accusamus sapiente, optio magnam voluptatum et corporis ea
+              distinctio repellat at debitis doloribus similique.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Provident magni omnis iste inventore iusto! Reiciendis at in
+              tempora expedita commodi fugit natus, temporibus hic excepturi
+              dolorem voluptates inventore rerum! Nostrum?</p>
+            <a href="about.html">
+              <button class="btn btn-danger">More Info...</button>
+            </div></a>
+          <div class="col-md-5 p-4">
+            <img class="img-fluid" src="image/making coffee.jpg" height="500px"
+              width="700px" alt>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- About Section End -->
+
+    <!-- Menu Section Start -->
+
+    <section>
+      <style>
+        .card:hover{
+          background-color: black;
+          color: white;
+        }
+        #background-color{
+          background-color: #5D4037;
+          background-size: cover;
+        }
+        
+      </style>
+      <div class="container" id="background-color">
+        <h1>Menu</h1>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card">
+              <img src="image/coffee2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Coffee</h5>
+                <p class="card-text">Some quick example text to build on the
+                  card title and make up the bulk of the card’s content.</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <img src="image/coffee3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Tea</h5>
+                <p class="card-text">Some quick example text to build on the
+                  card title and make up the bulk of the card’s content.</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <img src="image/coffee4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Snake</h5>
+                <p class="card-text">Some quick example text to build on the
+                  card title and make up the bulk of the card’s content.</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <img src="image/coffee5.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Milkshacke</h5>
+                <p class="card-text">Some quick example text to build on the
+                  card title and make up the bulk of the card’s content.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Menu Section End -->
+
+    <!-- Service Section Start -->
+    <section class="mt-4">
+      <div class="container">
+        <div class="row">
+          <h1>Our service</h1>
+          <div class="col-md-6 mt-4">
+            <ul class="list-group">
+              <li class="list-group-item list-group-item-primary">Premium Coffee</li>
+              <li class="list-group-item list-group-item-primary">Fresh Bakery</li>
+              <li class="list-group-item list-group-item-primary">Fast Delivery</li>
+              
+            </ul>
+          </div>
+          <div class="col-md-6 mt-4">
+            <ul class="list-group">
+              <li class="list-group-item list-group-item-primary">Coffee Catering</li>
+              <li class="list-group-item list-group-item-primary">Free Wi-Fi</li>
+              <li class="list-group-item list-group-item-primary">Organic Beans</li>
+             
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Service Section End -->
+     <!-- Footer Start -->
+      <section class="mt-4 bg-dark text-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 p-4">
+              <h2>Coffee Shop</h2>
+              <p>Brew Haven Coffee Shop
+                  123 FC Road,
+                  Shivajinagar,
+                  Pune, Maharashtra 411005
+                  India
+                  Phone: +91 98765 43210
+                  Email: hello@brewhaven.com</p>
+            </div>
+            <div class="col-md-3">
+              <h2>Links</h2>
+                <ul type="unstlye">
+                  <li>Home</li>
+                  <li>About</li>
+                  <li>Menu</li>
+                  <li>Service</li>
+                </ul>
+            </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer End -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
