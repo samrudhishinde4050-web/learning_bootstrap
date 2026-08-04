@@ -17,7 +17,7 @@
         class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"><img src="image/logo.png"
-              alt="Bootstrap" width="50" height="45"> Coffee Shop</a>
+              alt="Bootstrap" width="50" height="45"> Coffee Culture</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -76,7 +76,7 @@
     <!-- Slider section start -->
     <main>
       <section>
-        <div id="carouselExampleIndicators" class="carousel slide">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators"
               data-bs-slide-to="0" class="active" aria-current="true"
@@ -90,17 +90,17 @@
 
           </div>
           <div class="carousel-inner carousel-fade">
-            <div class="carousel-item active ">
-              <img src="image/slider-5.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-item active" data-bs-interval="2500">
+              <img src="image/s1.png" class="d-block w-100" alt="...">
             </div>
-            <div class="carousel-item">
-              <img src="image/slider-6.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="image/s2.png" class="d-block w-100" alt="...">
             </div>
-            <div class="carousel-item">
-              <img src="image/slider-11.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="image/s3.png" class="d-block w-100" alt="...">
             </div>
-            <div class="carousel-item">
-              <img src="image/slider-10.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="image/s4.png" class="d-block w-100" alt="...">
             </div>
           </div>
           <button class="carousel-control-prev" type="button"
@@ -124,19 +124,13 @@
         <div class="row">
           <div class="col-md-7 p-4">
             <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem quidem doloremque delectus eveniet asperiores cumque
-              nihil accusamus sapiente, optio magnam voluptatum et corporis ea
-              distinctio repellat at debitis doloribus similique.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Provident magni omnis iste inventore iusto! Reiciendis at in
-              tempora expedita commodi fugit natus, temporibus hic excepturi
-              dolorem voluptates inventore rerum! Nostrum?</p>
+            <p>Welcome to Coffee Culture, where every cup is crafted with passion and every visit is designed to create memorable moments. We believe that coffee is more than just a beverage—it's an experience that brings people together, inspires conversations, and brightens every day.</p>
+            <p>Our café proudly serves freshly brewed coffee made from carefully selected premium coffee beans, handcrafted by skilled baristas who are passionate about delivering exceptional quality in every cup. From rich espresso and creamy cappuccinos to refreshing iced coffees, flavorful lattes, and specialty beverages, our menu is created to satisfy every coffee lover.</p>
             <a href="about.html">
               <button class="btn btn-danger">More Info...</button>
             </div></a>
           <div class="col-md-5 p-4">
-            <img class="img-fluid" src="image/making coffee.jpg" height="500px"
+            <img class="img-fluid" src="image/about.jpg" height="500px"
               width="700px" alt>
           </div>
         </div>
@@ -147,61 +141,58 @@
 
     <!-- Menu Section Start -->
 
-    <section>
+    <section id="menu">
       <style>
         .card:hover{
           background-color: black;
           color: white;
         }
-        #background-color{
-          background-color: #5D4037;
-          background-size: cover;
-        }
+        
+        #menu{
+    background: #F8F4EF;
+    padding:80px 0;
+}
         
       </style>
       <div class="container" id="background-color">
-        <h1>Menu</h1>
+        <h2 class="text-center fw-bold mb-2">Our Menu</h2>
         <div class="row">
           <div class="col-md-3">
             <div class="card">
-              <img src="image/coffee2.jpg" class="card-img-top" alt="...">
+              <img src="image/menu1.jpg" class="card-img-top" width="400px" height="300px" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Coffee</h5>
-                <p class="card-text">Some quick example text to build on the
-                  card title and make up the bulk of the card’s content.</p>
+                <h5 class="card-title">Espresso</h5>
+                <p class="card-text">Rich and aromatic espresso made from premium roasted coffee beans.</p>
 
               </div>
             </div>
           </div>
           <div class="col-md-3">
             <div class="card">
-              <img src="image/coffee3.jpg" class="card-img-top" alt="...">
+              <img src="image/menu2.jpg" class="card-img-top" width="400px" height="300px" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Tea</h5>
-                <p class="card-text">Some quick example text to build on the
-                  card title and make up the bulk of the card’s content.</p>
+                <h5 class="card-title">Cappuccino</h5>
+                <p class="card-text">Creamy espresso with steamed milk and silky foam.</p>
 
               </div>
             </div>
           </div>
           <div class="col-md-3">
             <div class="card">
-              <img src="image/coffee4.jpg" class="card-img-top" alt="...">
+              <img src="image/menu3.jpg" class="card-img-top" width="400px" height="300px" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Snake</h5>
-                <p class="card-text">Some quick example text to build on the
-                  card title and make up the bulk of the card’s content.</p>
+                <h5 class="card-title">Cheesecake</h5>
+                <p class="card-text"> Creamy, velvety cheesecake served with a delicious buttery biscuit base.</p>
 
               </div>
             </div>
           </div>
           <div class="col-md-3">
             <div class="card">
-              <img src="image/coffee5.jpg" class="card-img-top" alt="...">
+              <img src="image/menu4.jpg" class="card-img-top" width="400px" height="300px" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Milkshacke</h5>
-                <p class="card-text">Some quick example text to build on the
-                  card title and make up the bulk of the card’s content.</p>
+                <p class="card-text">A bold and smooth black coffee with a rich aroma and balanced flavor.</p>
 
               </div>
             </div>
