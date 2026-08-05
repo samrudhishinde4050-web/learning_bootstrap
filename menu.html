@@ -13,7 +13,8 @@
   <body>
     <!-- Header start -->
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary" class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary"
+        class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"><img src="image/logo.png"
               alt="Bootstrap" width="50" height="45"> Coffee Shop</a>
@@ -26,13 +27,18 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link " 
+                <a class="nav-link "
                   href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="about.html">About</a>
+                <a class="nav-link" aria-current="page"
+                  href="about.html">About</a>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page"
+                  href="menu.html">Menu</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
                 <a class="nav-link " class="nav-link dropdown-toggle" href="menu.html"
                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Menu
@@ -47,15 +53,17 @@
                   <li><a class="dropdown-item" href="#">Snacks</a></li>
 
                 </ul>
-              </li>
+              </li> -->
               <li class="nav-item">
-                <a class="nav-link active" class="nav-link" href="gallery.html">Gallery</a>
+                <a class="nav-link active" class="nav-link"
+                  href="gallery.html">Gallery</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">Service</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                <a class="nav-link active" class="nav-link"
+                  href="contact.html">Contact Us</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -67,7 +75,130 @@
           </div>
         </div>
       </nav>
-      <h1>This is Menu Page</h1>
+      <!-- Menu Section Start -->
+      <main>
+        <section id="menu">
+          <style>
+        .card:hover{
+          background-color: black;
+          color: white;
+        }
+        
+        #menu{
+    background: #F8F4EF;
+    padding:80px 0;
+}
+        
+      </style>
+          <div class="container" id="background-color">
+            <h2 class="text-center fw-bold mb-5 mt-1">Our Menu</h2>
+            <div class="row">
+              <!-- Start Menu1 -->
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="image/menu1.jpg" class="card-img-top" width="400px"
+                    height="300px" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Espresso</h5>
+                    <p class="card-text">Rich and aromatic espresso made from
+                      premium roasted coffee beans.</p>
+                    <button type="button" class="btn btn-primary"
+                      data-bs-toggle="modal" data-bs-target="#menu1">
+                      Read More
+                    </button>
+
+                  </div>
+                </div>
+              </div>
+              <!-- End Menu1 -->
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="image/menu2.jpg" class="card-img-top" width="400px"
+                    height="300px" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Cappuccino</h5>
+                    <p class="card-text">Creamy espresso with steamed milk and
+                      silky foam.</p>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="image/menu3.jpg" class="card-img-top" width="400px"
+                    height="300px" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Cheesecake</h5>
+                    <p class="card-text"> Creamy, velvety cheesecake served with
+                      a delicious buttery biscuit base.</p>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="image/menu4.jpg" class="card-img-top" width="400px"
+                    height="300px" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Milkshacke</h5>
+                    <p class="card-text">A bold and smooth black coffee with a
+                      rich aroma and balanced flavor.</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Modal -->
+        <div class="modal fade" id="menu1" tabindex="-1"
+          aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="menu1">Espresso</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                  aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <img class="img-fluid" src="image/slider1 (3).jpg" alt="">
+                      
+                    </div>
+                    <div class="col-md-6">
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque suscipit ipsam pariatur odio porro, distinctio quae omnis ex obcaecati quam tempora nulla consectetur, molestias esse vel deserunt, asperiores magnam optio.</p>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa quisquam laborum natus, et delectus quod eaque recusandae fugiat possimus earum facere alias voluptas sunt non vero deserunt totam dignissimos ea!</p>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eius labore dicta alias reiciendis eaque quidem temporibus aperiam! Rem quasi quis quisquam earum tempore, accusantium vel libero quod nam? Tempore.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row">
+                <div class="col-md-4">
+                  <img class="img-fluid" src="image/coffee2.jpg" alt="">
+                </div>
+                <div class="col-md-4">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias maiores omnis aperiam consectetur nesciunt, reiciendis necessitatibus quo a, adipisci veniam sit dolore reprehenderit obcaecati. Dolorum autem fugiat cumque sequi commodi?</p>
+                </div>
+                <div class="col-md-4">
+                  <img class="img-fluid" src="image/coffee3.jpg" alt="">
+                </div>
+              </div></div>
+              
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary"
+                  data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save
+                  changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- Menu Section End -->
 
     </header>
     <!-- Header End -->
