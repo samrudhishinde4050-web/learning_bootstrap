@@ -17,7 +17,7 @@
         class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"><img src="image/logo.png"
-              alt="Bootstrap" width="50" height="45"> Coffee Shop</a>
+              alt="Bootstrap" width="50" height="45"> Coffee Culture</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -34,26 +34,25 @@
                 <a class="nav-link" aria-current="page"
                   href="about.html">About</a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" aria-current="page"
                   href="menu.html">Menu</a>
-              </li>
-              <!-- <li class="nav-item dropdown">
-                <a class="nav-link " class="nav-link dropdown-toggle" href="menu.html"
+              </li> -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="menu.html"
                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Menu
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#"> Hot Coffee</a></li>
-                  <li><a class="dropdown-item" href="#">Cold Coffee</a></li>
+                  <li><a class="dropdown-item" href="menu.html"> Hot Coffee</a></li>
+                  <li><a class="dropdown-item" href="menu.html">Cold Coffee</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Milkshakes</a></li>
-                  <li><a class="dropdown-item" href="#">Tea</a></li>
-                  <li><a class="dropdown-item" href="#">Desserts</a></li>
-                  <li><a class="dropdown-item" href="#">Snacks</a></li>
+                  <li><a class="dropdown-item" href="menu.html">Milkshakes</a></li>
+                  <li><a class="dropdown-item" href="menu.html">Desserts</a></li>
+                  <li><a class="dropdown-item" href="menu.html">Snacks</a></li>
 
                 </ul>
-              </li> -->
+              </li>
               <li class="nav-item">
                 <a class="nav-link active" class="nav-link"
                   href="gallery.html">Gallery</a>
@@ -91,7 +90,21 @@
         
       </style>
           <div class="container" id="background-color">
-            <h2 class="text-center fw-bold mb-5 mt-1">Our Menu</h2>
+            <div class="text-center mb-5">
+    <p class="text-uppercase fw-bold mb-2"
+       style="color: #8B5E3C; font-size: 40px; font-family:serif" >
+      
+        Our Menu
+    </p>
+
+    <h2 class="fw-bold">
+        Delicious Treats & Beverages
+    </h2>
+
+    <p class="text-muted">
+        Freshly brewed coffee, refreshing drinks & delicious desserts.
+    </p>
+</div>
             <div class="row">
               <!-- Start Menu1 -->
               <div class="col-md-3">
@@ -99,7 +112,7 @@
                   <img src="image/menu1.jpg" class="card-img-top" width="400px"
                     height="300px" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Espresso</h5>
+                    <h5 class="card-title">Coffee</h5>
                     <p class="card-text">Rich and aromatic espresso made from
                       premium roasted coffee beans.</p>
                     <button type="button" class="btn btn-primary"
@@ -131,6 +144,8 @@
               </div>
               <!-- Second Menu End -->
 
+
+                <!-- Third Menu Start -->
               <div class="col-md-3">
                 <div class="card">
                   <img src="image/menu3.jpg" class="card-img-top" width="400px"
@@ -139,10 +154,17 @@
                     <h5 class="card-title">Cheesecake</h5>
                     <p class="card-text"> Creamy, velvety cheesecake served with
                       a delicious buttery biscuit base.</p>
+                      <button type="button" class="btn btn-primary"
+                      data-bs-toggle="modal" data-bs-target="#menu3">
+                      Read More
+                    </button>
 
                   </div>
                 </div>
               </div>
+              <!-- Third Menu End -->
+
+              <!-- Fourth Menu Start -->
               <div class="col-md-3">
                 <div class="card">
                   <img src="image/menu4.jpg" class="card-img-top" width="400px"
@@ -151,12 +173,17 @@
                     <h5 class="card-title">Milkshacke</h5>
                     <p class="card-text">A bold and smooth black coffee with a
                       rich aroma and balanced flavor.</p>
+                      <button type="button" class="btn btn-primary"
+                      data-bs-toggle="modal" data-bs-target="#menu4">
+                      Read More
+                    </button>
 
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <!-- Fourth Menu End -->
         </section>
         <!-- Modal -->
 
@@ -265,6 +292,62 @@
           </div>
         </div>
         <!-- Menu2 End -->
+
+        <!-- Menu3 Start -->
+
+                <div class="modal fade" id="menu3" tabindex="-1"
+          aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="menu1">Cappuccino ☕</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                  aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <img height="400px" width="450px" src="image/menu3.jpg" alt="">
+                      
+                    </div>
+                    <div class="col-md-6">
+                      <p><b>Cappuccino ☕</b></p>
+                      <p>Cappuccino is a classic Italian coffee made with a rich shot of espresso, steamed milk, and a thick layer of silky milk foam.</p>
+                      <p>It has a perfect balance of strong coffee flavor, creamy milk, and smooth foam, making it one of the most loved coffee drinks around the world.</p>
+                      <p>Our cappuccino is freshly prepared using premium coffee beans and perfectly steamed milk to give you a rich and satisfying coffee experience.</p>
+                      <p>Our cappuccino is carefully crafted by skilled baristas who focus on the perfect ratio of espresso, steamed milk, and milk foam. Every cup is prepared fresh to maintain its rich aroma, smooth texture, and delicious flavor.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="container p-5">
+                <div class="row">
+                <div class="col-md-3">
+                  <img height="250px" width="300px" src="image/coffee2.jpg" alt="">
+                </div>
+                <div class="col-md-3">
+                  <h5 style="text-align: center;"><b>Perfectly Crafted</b></h5>
+                  <p>Every cup is carefully prepared by our baristas using freshly brewed espresso and smooth steamed milk.</p>
+                  <p>The silky foam on top adds a soft and creamy texture while enhancing the delicious coffee aroma.</p>
+                </div>
+                <div class="col-md-3">
+                  <img height="250px" width="300px"  src="image/coffee4.jpg" alt="">
+                </div>
+              </div></div>
+              
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary"
+                  data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save
+                  changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Menu3 End -->
+
 
       <!-- model  Section End -->
 
