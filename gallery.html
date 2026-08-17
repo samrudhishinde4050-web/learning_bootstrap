@@ -149,11 +149,12 @@
               Rich espresso with steamed milk and silky foam.
             </p>
 
-            <button
-              class="btn"
-              style="background-color:#6F4E37;color:white;">
-              View Details
-            </button>
+            
+
+            <button type="button" style="background-color:#6F4E37;color:white;" data-bs-toggle="modal" data-bs-target="#card1">
+   View Details
+</button>
+
 
           </div>
         </div>
@@ -179,11 +180,9 @@
               Smooth espresso topped with steamed milk and creamy foam.
             </p>
 
-            <button
-              class="btn"
-              style="background-color:#6F4E37;color:white;">
-              View Details
-            </button>
+            <button type="button" style="background-color:#6F4E37;color:white;" data-bs-toggle="modal" data-bs-target="#card2">
+  View Details
+</button>
 
           </div>
         </div>
@@ -209,11 +208,9 @@
               Creamy coffee made with rich espresso and steamed milk.
             </p>
 
-            <button
-              class="btn"
-              style="background-color:#6F4E37;color:white;">
-              View Details
-            </button>
+            <button type="button" style="background-color:#6F4E37;color:white;" data-bs-toggle="modal" data-bs-target="#card2">
+  View Details
+</button>
 
           </div>
         </div>
@@ -221,6 +218,106 @@
 
     </div>
   </div>
+  <!-- Modal -->
+   <!-- Card 1 Start -->
+<div class="modal fade" id="card1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Coffee Details</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="img-fluid" src="image/Espresso.jpg" alt="">
+            </div>
+            <div class="col-md-6 mt-6">
+              <h1 class="text-center fw-bold"
+    style="color:#6F4E37; font-family:Georgia, serif;">
+    Coffee
+</h1>
+              <p>Our coffee is carefully brewed to bring out a smooth aroma and rich flavor. It is prepared with freshly ground coffee beans and served hot for a warm and refreshing experience. Perfect for starting your day, relaxing with friends, or enjoying a peaceful coffee break.</p>
+
+              <h5 class="fw-bold" style="color:#6F4E37;">
+     Features
+</h5>
+
+<ul>
+    <li>Premium roasted coffee beans</li>
+    <li>Freshly brewed</li>
+    <li>Rich aroma and smooth taste</li>
+    <li>Served hot</li>
+    <li>Perfect for coffee lovers</li>
+</ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+             <video class="w-100" autoplay  loop muted>
+                <source src="image/cc1.mp4" type="video/mp4">
+              </video>
+          </div>
+          <div class="col-md-6">
+            <img class="img-fluid" src="image/about.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Card 1 End -->
+
+<!-- Card 2 Start -->
+<div class="modal fade" id="card2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Desserts</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Card 2 End -->
+
+<!-- Card 3 Start -->
+<div class="modal fade" id="card2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Snacks</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Card 3 End -->
+
 </section>
       
      </main>
