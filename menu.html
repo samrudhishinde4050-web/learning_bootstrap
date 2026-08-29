@@ -1,473 +1,1258 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+
+    <title>Coffee Culture - Menu</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet">
+
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous">
-      <style>
-        .card:hover{
-          background-color: black;
-          color: white;
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+
+    <style>
+
+        /* ---------- PAGE STRUCTURE ---------- */
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100%;
         }
-        
-        #menu{
-    background: #F8F4EF;
-    padding:40px 0;
-}
 
-    .menu-section h1 {
-        text-align: center;
-        font-family: Georgia, 'Times New Roman', serif;
-        font-size: 42px;
-        font-weight: bold;
-        color: #6F4E37;
-        margin: 40px 0 30px;
-    }
-     .navbar .nav-link.active {
-    color: #C08A5A !important;
-    font-weight: bold;
-}
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
 
-        
-      </style>
-  </head>
-  <body>
-    <!-- Header start -->
-    <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary"
-        class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img src="image/logo.png"
-              alt="Bootstrap" width="50" height="45"> Coffee Culture</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link "
-                  href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page"
-                  href="about.html">About</a>
-              </li>
-             
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#"
-                  role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Menu
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="menu.html#hotcoffee">Hot Coffee</a></li>
-                  <li><a class="dropdown-item" href="menu.html#coldbeverages">Cold Beverages</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="menu.html#desserts">Desserts</a></li>
-                  <li><a class="dropdown-item" href="menu.html#snacks">Snacks</a></li>
+        main {
+            flex: 1;
+        }
 
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " class="nav-link"
-                  href="gallery.html">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="service.html">Service</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" class="nav-link"
-                  href="contact.html">Contact Us</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search"
-                placeholder="Search" aria-label="Search" />
-              <button class="btn btn-outline-success"
-                type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-</header>
-      <!-- Header End -->
+        /* ---------- MENU ---------- */
        
-      <!-- Menu1 Section Start -->
-      <main>
-        <section id="menu">
-          
-          <class class="container" id="background-color">
-            <div class="text-center mb-5">
-    <p class="text-uppercase fw-bold mb-2"
-       style="color: #8B5E3C; font-size: 40px; font-family:serif" >
-      
-        Our Menu
-    </p>
 
-    <h2 class="fw-bold">
-        Delicious Treats & Beverages
-    </h2>
+        #menu {
+            background: #F8F4EF;
+            padding: 40px 0;
+        }
 
-    <p class="text-muted">
-        Freshly brewed coffee, refreshing drinks & delicious desserts.
-    </p>
-</div>
+        .menu-section h1 {
+            text-align: center;
+            font-family:'Pacifico', cursive !important ;
+            font-size: 42px;
+            font-weight: bold;
+            color: #6F4E37;
+            margin: 40px 0 30px;
+        }
+
+        /* ---------- CARD ---------- */
+
+        .menu-section .card {
+            width: 100% !important;
+            height: 100%;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .menu-section .card-img-top {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card:hover {
+            background-color: black;
+            color: white;
+        }
+
+        /* ---------- ACTIVE NAV LINK ---------- */
+
+        .navbar .nav-link.active {
+            color: #C08A5A !important;
+            font-weight: bold;
+        }
+
+        /* ---------- FOOTER ---------- */
+
+        footer {
+            margin: 0 !important;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER START ================= -->
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary"
+            data-bs-theme="dark">
+
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="index.html">
+
+                    <img src="image/logo.png"
+                        alt="Coffee Culture"
+                        width="50"
+                        height="45">
+
+                    Coffee Culture
+
+                </a>
 
 
-<section  id="hotcoffee" class="menu-section">
-  <h1>Hot Coffee</h1>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3">
-        <div class="card" style="width: 18rem;">
-  <img src="image/Espresso.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title text-center fw-bold">Espresso</h5>
-    <p class="card-text">A rich and aromatic shot of freshly brewed espresso,
-    crafted from premium roasted coffee beans. Its bold
-    flavor and smooth finish make it perfect for coffee lovers.</p>
-    <p class="price fw-bold text-center fs-5">
-    Rs.120
-</p>
-    
-  </div>
-</div>
-      </div>
-      <div class="col-md-3">
-        <div class="card" style="width: 18rem;">
-  <img src="image/h2.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title text-center fw-bold">Cappuccino</h5>
-    <Rich class="card-text">Rich espresso blended with steamed milk and topped with a thick layer of silky foam for a smooth and creamy taste.</p>
-    <p class="price fw-bold text-center fs-5">
-    Rs.150
-</p>
-    
-  </div>
-</div>
-      </div>
-      <div class="col-md-3">
-        <div class="card" style="width: 18rem;">
-  <img src="image/h4.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title text-center fw-bold">Americano</h5>
-    <p class="card-text">A bold and refreshing coffee made with rich espresso and hot water, offering a smooth and strong coffee flavor.</p>
-    <p class="price fw-bold text-center fs-5">
-    Rs.130
-</p>
-    
-  </div>
-</div>
-      </div>
-      <div class="col-md-3">
-        <div class="card" style="width: 18rem;">
-  <img src="image/hot coffee1.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title text-center fw-bold">Mocha</h5>
-    <p class="card-text">A delicious combination of rich espresso, creamy steamed milk, and chocolate, topped with smooth foam for a sweet coffee experience.</p>
-    <p class="price fw-bold text-center fs-5">
-    Rs.160
-</p>
-    
-  </div>
-</div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Hot Coffee End -->
+                <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
 
-<!-- Cold Beverages Start -->
+                    <span class="navbar-toggler-icon"></span>
 
-<section  id="coldbeverages" class="menu-section mt-5">
-  <h1>Cold Beverages</h1>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3">
-        <div class="card" style="width: 18rem;">
-  <img src="image/c1.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title text-center fw-bold">Cold Coffee</h5>
-    <p class="card-text">A chilled blend of rich coffee, creamy milk, and ice, finished with a smooth and refreshing taste.</p>
-    <p class="price fw-bold text-center fs-5">
-    Rs.150
-</p>
-    
-  </div>
-</div>
-      </div>
-      <div class="col-md-3">
-        <div class="card" style="width: 18rem;">
-  <img src="image/c2.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title text-center fw-bold">Vanilla Milkshake</h5>
-    <Rich class="card-text">A smooth vanilla delight with a delicate sweetness and creamy perfect for a refreshing break.</p>
-    <p class="price fw-bold text-center fs-5">
-    Rs.170
-</p>
-    
-  </div>
-</div>
-      </div>
-      <div class="col-md-3">
-        <div class="card" style="width: 18rem;">
-  <img src="image/c7.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title text-center fw-bold">Strawberry Milkshake</h5>
-    <p class="card-text">A creamy strawberry blend bursting with fruity flavor, served for a refreshing and delicious experience.</p>
-    <p class="price fw-bold text-center fs-5">
-    Rs.170
-</p>
-    
-  </div>
-</div>
-      </div>
-      <div class="col-md-3">
-        <div class="card" style="width: 18rem;">
-  <img src="image/c3.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title text-center fw-bold">Chocolate Milkshake</h5>
-    <p class="card-text">A thick and indulgent chocolate shake made with creamy milk and delicious chocolate for sweet treat.</p>
-    <p class="price fw-bold text-center fs-5">
-    Rs.160
-</p>
-    
-  </div>
-</div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Cold Beverages End -->
- 
-<!-- Desserts Start -->
-<section  id="desserts" class="menu-section mt-5">
-  <h1>Desserts</h1>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3">
-        <div class="card" style="width: 18rem;">
-  <img src="image/d1.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title text-center fw-bold">Cheesecake</h5>
-    <p class="card-text">A smooth and creamy cheesecake with a buttery biscuit crust, finished with a delicious topping for the perfect sweet treat.</p>
-    <p class="price fw-bold text-center fs-5">
-    Rs.180
-</p>
-    
-  </div>
-</div>
-      </div>
-      <div class="col-md-3">
-        <div class="card" style="width: 18rem;">
-  <img src="image/d2.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title text-center fw-bold">Brownie</h5>
-    <Rich class="card-text">A rich, fudgy chocolate brownie with a soft center and deep chocolate flavor, perfect with a cup of hot coffee.</p>
-    <p class="price fw-bold text-center fs-5">
-    Rs.130
-</p>
-    
-  </div>
-</div>
-      </div>
-      <div class="col-md-3">
-        <div class="card" style="width: 18rem;">
-  <img src="image/d3.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title text-center fw-bold">Chocolate Cake</h5>
-    <p class="card-text">Moist and delicious chocolate cake layered with creamy chocolate frosting for a rich and satisfying dessert.</p>
-    <p class="price fw-bold text-center fs-5">
-    Rs.170
-</p>
-    
-  </div>
-</div>
-      </div>
-      <div class="col-md-3">
-        <div class="card" style="width: 18rem;">
-  <img src="image/d4.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title text-center fw-bold">Red Velvet Cake</h5>
-    <p class="card-text">A soft, velvety red cake layered with smooth cream-cheese frosting, offering a perfect balance of sweetness and richness.</p>
-    <p class="price fw-bold text-center fs-5">
-    Rs.190
-</p>
-    
-  </div>
-</div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Desserts End -->
+                </button>
 
-<!-- Snacks Start -->
-<section  id="snacks" class="menu-section mt-5">
-  <h1>Snacks</h1>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3">
-        <div class="card" style="width: 18rem;">
-  <img src="image/sn1.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title text-center fw-bold">Grilled Sandwich</h5>
-    <p class="card-text">Crispy golden-toasted bread filled with fresh vegetables, cheese, and flavorful sauces. A delicious and filling café snack.</p>
-    <p class="price fw-bold text-center fs-5">
-    Rs.160
-</p>
-    
-  </div>
-</div>
-      </div>
-      <div class="col-md-3">
-        <div class="card" style="width: 18rem;">
-  <img src="image/sn2.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title text-center fw-bold">Cheese Sandwich</h5>
-    <Rich class="card-text">Soft bread layered with melted cheese and fresh vegetables, grilled until golden and served warm.</p>
-    <p class="price fw-bold text-center fs-5">
-    Rs.180
-</p>
-    
-  </div>
-</div>
-      </div>
-      <div class="col-md-3">
-        <div class="card" style="width: 18rem;">
-  <img src="image/sn6.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title text-center fw-bold">Veg Burger</h5>
-    <p class="card-text">A soft toasted bun filled with a crispy vegetable patty, fresh lettuce, tomato, and creamy sauce.</p>
-    <p class="price fw-bold text-center fs-5">
-    Rs.170
-</p>
-    
-  </div>
-</div>
-      </div>
-      <div class="col-md-3">
-        <div class="card" style="width: 18rem;">
-  <img src="image/sn4.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title text-center fw-bold">French Fries</h5>
-    <p class="card-text">Golden and crispy potato fries seasoned with a touch of salt, perfect as a quick and tasty café snack.</p>
-    <p class="price fw-bold text-center fs-5">
-    Rs.190
-</p>
-    
-  </div>
-</div>
-      </div>
-    </div>
-  </div>
-</section>
- <!-- Snacks End -->
-           
+
+                <div class="collapse navbar-collapse"
+                    id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="index.html">
+                                Home
+                            </a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="about.html">
+                                About
+                            </a>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link active dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false">
+
+                                Menu
+
+                            </a>
+
+
+                            <ul class="dropdown-menu">
+
+                                <li>
+                                    <a class="dropdown-item"
+                                        href="#hotcoffee">
+                                        Hot Coffee
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item"
+                                        href="#coldbeverages">
+                                        Cold Beverages
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item"
+                                        href="#desserts">
+                                        Desserts
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item"
+                                        href="#snacks">
+                                        Snacks
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="gallery.html">
+                                Gallery
+                            </a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="service.html">
+                                Service
+                            </a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="contact.html">
+                                Contact Us
+                            </a>
+                        </li>
+
+                    </ul>
+
+
+                    <form class="d-flex"
+                        role="search">
+
+                        <input class="form-control me-2"
+                            type="search"
+                            placeholder="Search"
+                            aria-label="Search">
+
+                        <button class="btn btn-outline-success"
+                            type="submit">
+
+                            Search
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </nav>
 
     </header>
-    <!-- Header End -->
+
+    <!-- ================= HEADER END ================= -->
+
+
+    <!-- ================= MAIN START ================= -->
+
+    <main>
+
+        <section id="menu">
+
+            <!-- MENU INTRO -->
+
+            <div class="container">
+
+                <div class="text-center mb-5">
+
+                    <p class="text-uppercase fw-bold mb-2"
+                        style="
+                        color:#8B5E3C;
+                        font-size:40px;
+                        font-family:serif;
+                        ">
+
+                        Our Menu
+
+                    </p>
+
+
+                    <h2 class="fw-bold">
+
+                        Delicious Treats & Beverages
+
+                    </h2>
+
+
+                    <p class="text-muted">
+
+                        Freshly brewed coffee,
+                        refreshing drinks &
+                        delicious desserts.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= HOT COFFEE ================= -->
+
+            <section id="hotcoffee"
+                class="menu-section">
+
+                <h1>Hot Coffee</h1>
+
+
+                <div class="container">
+
+                    <div class="row g-4">
+
+
+                        <!-- Espresso -->
+
+                        <div class="col-md-3">
+
+                            <div class="card">
+
+                                <img src="image/Espresso.png"
+                                    class="card-img-top"
+                                    alt="Espresso">
+
+                                <div class="card-body">
+
+                                    <h5 class="card-title text-center fw-bold">
+
+                                        Espresso
+
+                                    </h5>
+
+
+                                    <p class="card-text">
+
+                                        A rich and aromatic shot
+                                        of freshly brewed espresso,
+                                        crafted from premium roasted
+                                        coffee beans. Its bold flavor
+                                        and smooth finish make it
+                                        perfect for coffee lovers.
+
+                                    </p>
+
+
+                                    <p class="price fw-bold text-center fs-5">
+
+                                        Rs.120
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Cappuccino -->
+
+                        <div class="col-md-3">
+
+                            <div class="card">
+
+                                <img src="image/h2.jpg"
+                                    class="card-img-top"
+                                    alt="Cappuccino">
+
+                                <div class="card-body">
+
+                                    <h5 class="card-title text-center fw-bold">
+
+                                        Cappuccino
+
+                                    </h5>
+
+
+                                    <p class="card-text">
+
+                                        Rich espresso blended with
+                                        steamed milk and topped with
+                                        a thick layer of silky foam
+                                        for a smooth and creamy taste.
+
+                                    </p>
+
+
+                                    <p class="price fw-bold text-center fs-5">
+
+                                        Rs.150
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Americano -->
+
+                        <div class="col-md-3">
+
+                            <div class="card">
+
+                                <img src="image/h4.png"
+                                    class="card-img-top"
+                                    alt="Americano">
+
+                                <div class="card-body">
+
+                                    <h5 class="card-title text-center fw-bold">
+
+                                        Americano
+
+                                    </h5>
+
+
+                                    <p class="card-text">
+
+                                        A bold and refreshing coffee
+                                        made with rich espresso and
+                                        hot water, offering a smooth
+                                        and strong coffee flavor.
+
+                                    </p>
+
+
+                                    <p class="price fw-bold text-center fs-5">
+
+                                        Rs.130
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Mocha -->
+
+                        <div class="col-md-3">
+
+                            <div class="card">
+
+                                <img src="image/hot coffee1.png"
+                                    class="card-img-top"
+                                    alt="Mocha">
+
+                                <div class="card-body">
+
+                                    <h5 class="card-title text-center fw-bold">
+
+                                        Mocha
+
+                                    </h5>
+
+
+                                    <p class="card-text">
+
+                                        A delicious combination of
+                                        rich espresso, creamy steamed
+                                        milk, and chocolate, topped
+                                        with smooth foam.
+
+                                    </p>
+
+
+                                    <p class="price fw-bold text-center fs-5">
+
+                                        Rs.160
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= COLD BEVERAGES ================= -->
+
+            <section id="coldbeverages"
+                class="menu-section mt-5">
+
+                <h1>Cold Beverages</h1>
+
+
+                <div class="container">
+
+                    <div class="row g-4">
+
+
+                        <!-- Cold Coffee -->
+
+                        <div class="col-md-3">
+
+                            <div class="card">
+
+                                <img src="image/c1.jpg"
+                                    class="card-img-top"
+                                    alt="Cold Coffee">
+
+                                <div class="card-body">
+
+                                    <h5 class="card-title text-center fw-bold">
+
+                                        Cold Coffee
+
+                                    </h5>
+
+
+                                    <p class="card-text">
+
+                                        A chilled blend of rich coffee,
+                                        creamy milk, and ice, finished
+                                        with a smooth and refreshing taste.
+
+                                    </p>
+
+
+                                    <p class="price fw-bold text-center fs-5">
+
+                                        Rs.150
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Vanilla Milkshake -->
+
+                        <div class="col-md-3">
+
+                            <div class="card">
+
+                                <img src="image/c2.jpg"
+                                    class="card-img-top"
+                                    alt="Vanilla Milkshake">
+
+                                <div class="card-body">
+
+                                    <h5 class="card-title text-center fw-bold">
+
+                                        Vanilla Milkshake
+
+                                    </h5>
+
+
+                                    <p class="card-text">
+
+                                        A smooth vanilla delight with
+                                        delicate sweetness and creamy
+                                        texture, perfect for a refreshing break.
+
+                                    </p>
+
+
+                                    <p class="price fw-bold text-center fs-5">
+
+                                        Rs.170
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Strawberry Milkshake -->
+
+                        <div class="col-md-3">
+
+                            <div class="card">
+
+                                <img src="image/c7.png"
+                                    class="card-img-top"
+                                    alt="Strawberry Milkshake">
+
+                                <div class="card-body">
+
+                                    <h5 class="card-title text-center fw-bold">
+
+                                        Strawberry Milkshake
+
+                                    </h5>
+
+
+                                    <p class="card-text">
+
+                                        A creamy strawberry blend
+                                        bursting with fruity flavor,
+                                        served for a refreshing experience.
+
+                                    </p>
+
+
+                                    <p class="price fw-bold text-center fs-5">
+
+                                        Rs.170
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Chocolate Milkshake -->
+
+                        <div class="col-md-3">
+
+                            <div class="card">
+
+                                <img src="image/c3.png"
+                                    class="card-img-top"
+                                    alt="Chocolate Milkshake">
+
+                                <div class="card-body">
+
+                                    <h5 class="card-title text-center fw-bold">
+
+                                        Chocolate Milkshake
+
+                                    </h5>
+
+
+                                    <p class="card-text">
+
+                                        A thick and indulgent chocolate
+                                        shake made with creamy milk
+                                        and delicious chocolate.
+
+                                    </p>
+
+
+                                    <p class="price fw-bold text-center fs-5">
+
+                                        Rs.160
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= DESSERTS ================= -->
+
+            <section id="desserts"
+                class="menu-section mt-5">
+
+                <h1>Desserts</h1>
+
+
+                <div class="container">
+
+                    <div class="row g-4">
+
+
+                        <!-- Cheesecake -->
+
+                        <div class="col-md-3">
+
+                            <div class="card">
+
+                                <img src="image/d1.jpg"
+                                    class="card-img-top"
+                                    alt="Cheesecake">
+
+                                <div class="card-body">
+
+                                    <h5 class="card-title text-center fw-bold">
+
+                                        Cheesecake
+
+                                    </h5>
+
+
+                                    <p class="card-text">
+
+                                        A smooth and creamy cheesecake
+                                        with a buttery biscuit crust,
+                                        finished with a delicious topping.
+
+                                    </p>
+
+
+                                    <p class="price fw-bold text-center fs-5">
+
+                                        Rs.180
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Brownie -->
+
+                        <div class="col-md-3">
+
+                            <div class="card">
+
+                                <img src="image/d2.jpg"
+                                    class="card-img-top"
+                                    alt="Brownie">
+
+                                <div class="card-body">
+
+                                    <h5 class="card-title text-center fw-bold">
+
+                                        Brownie
+
+                                    </h5>
+
+
+                                    <p class="card-text">
+
+                                        A rich, fudgy chocolate brownie
+                                        with a soft center and deep
+                                        chocolate flavor.
+
+                                    </p>
+
+
+                                    <p class="price fw-bold text-center fs-5">
+
+                                        Rs.130
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Chocolate Cake -->
+
+                        <div class="col-md-3">
+
+                            <div class="card">
+
+                                <img src="image/d3.png"
+                                    class="card-img-top"
+                                    alt="Chocolate Cake">
+
+                                <div class="card-body">
+
+                                    <h5 class="card-title text-center fw-bold">
+
+                                        Chocolate Cake
+
+                                    </h5>
+
+
+                                    <p class="card-text">
+
+                                        Moist and delicious chocolate
+                                        cake layered with creamy
+                                        chocolate frosting.
+
+                                    </p>
+
+
+                                    <p class="price fw-bold text-center fs-5">
+
+                                        Rs.170
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Red Velvet -->
+
+                        <div class="col-md-3">
+
+                            <div class="card">
+
+                                <img src="image/d4.jpg"
+                                    class="card-img-top"
+                                    alt="Red Velvet Cake">
+
+                                <div class="card-body">
+
+                                    <h5 class="card-title text-center fw-bold">
+
+                                        Red Velvet Cake
+
+                                    </h5>
+
+
+                                    <p class="card-text">
+
+                                        A soft, velvety red cake layered
+                                        with smooth cream-cheese frosting.
+
+                                    </p>
+
+
+                                    <p class="price fw-bold text-center fs-5">
+
+                                        Rs.190
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= SNACKS ================= -->
+
+            <section id="snacks"
+                class="menu-section mt-5">
+
+                <h1>Snacks</h1>
+
+
+                <div class="container">
+
+                    <div class="row g-4">
+
+
+                        <!-- Grilled Sandwich -->
+
+                        <div class="col-md-3">
+
+                            <div class="card">
+
+                                <img src="image/sn1.jpg"
+                                    class="card-img-top"
+                                    alt="Grilled Sandwich">
+
+                                <div class="card-body">
+
+                                    <h5 class="card-title text-center fw-bold">
+
+                                        Grilled Sandwich
+
+                                    </h5>
+
+
+                                    <p class="card-text">
+
+                                        Crispy golden-toasted bread
+                                        filled with fresh vegetables,
+                                        cheese, and flavorful sauces.
+
+                                    </p>
+
+
+                                    <p class="price fw-bold text-center fs-5">
+
+                                        Rs.160
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Cheese Sandwich -->
+
+                        <div class="col-md-3">
+
+                            <div class="card">
+
+                                <img src="image/sn2.png"
+                                    class="card-img-top"
+                                    alt="Cheese Sandwich">
+
+                                <div class="card-body">
+
+                                    <h5 class="card-title text-center fw-bold">
+
+                                        Cheese Sandwich
+
+                                    </h5>
+
+
+                                    <p class="card-text">
+
+                                        Soft bread layered with melted
+                                        cheese and fresh vegetables,
+                                        grilled until golden.
+
+                                    </p>
+
+
+                                    <p class="price fw-bold text-center fs-5">
+
+                                        Rs.180
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Veg Burger -->
+
+                        <div class="col-md-3">
+
+                            <div class="card">
+
+                                <img src="image/sn6.png"
+                                    class="card-img-top"
+                                    alt="Veg Burger">
+
+                                <div class="card-body">
+
+                                    <h5 class="card-title text-center fw-bold">
+
+                                        Veg Burger
+
+                                    </h5>
+
+
+                                    <p class="card-text">
+
+                                        A soft toasted bun filled with
+                                        a crispy vegetable patty,
+                                        fresh lettuce, tomato and sauce.
+
+                                    </p>
+
+
+                                    <p class="price fw-bold text-center fs-5">
+
+                                        Rs.170
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- French Fries -->
+
+                        <div class="col-md-3">
+
+                            <div class="card">
+
+                                <img src="image/sn4.jpg"
+                                    class="card-img-top"
+                                    alt="French Fries">
+
+                                <div class="card-body">
+
+                                    <h5 class="card-title text-center fw-bold">
+
+                                        French Fries
+
+                                    </h5>
+
+
+                                    <p class="card-text">
+
+                                        Golden and crispy potato fries
+                                        seasoned with a touch of salt,
+                                        perfect as a quick café snack.
+
+                                    </p>
+
+
+                                    <p class="price fw-bold text-center fs-5">
+
+                                        Rs.190
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <!-- ================= MAIN END ================= -->
+
+
+    <!-- ================= FOOTER START ================= -->
+
+    <footer class="bg-dark text-white pt-5 pb-3">
+
+        <div class="container">
+
+            <div class="row">
+
+                <!-- Coffee Shop Info -->
+
+                <div class="col-lg-4 col-md-6 mb-4">
+
+                    <h3 class="fw-bold">
+                        Coffee Culture
+                    </h3>
+
+                    <p class="mt-3">
+
+                        Coffee Culture <br>
+                        123 FC Road,<br>
+                        Shivajinagar, Pune,<br>
+                        Maharashtra 411005, India
+
+                    </p>
+
+
+                    <p>
+
+                        +91 98765 43210 <br>
+                        hello@brewhaven.com
+
+                    </p>
+
+                </div>
+
+
+                <!-- Quick Links -->
+
+                <div class="col-lg-2 col-md-6 mb-4">
+
+                    <h4>
+                        Quick Links
+                    </h4>
+
+                    <ul class="list-unstyled mt-3">
+
+                        <li>
+                            <a href="index.html"
+                                class="text-white text-decoration-none">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about.html"
+                                class="text-white text-decoration-none">
+                                About
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="menu.html"
+                                class="text-white text-decoration-none">
+                                Menu
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="service.html"
+                                class="text-white text-decoration-none">
+                                Services
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="gallery.html"
+                                class="text-white text-decoration-none">
+                                Gallery
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html"
+                                class="text-white text-decoration-none">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Opening Hours -->
+
+                <div class="col-lg-3 col-md-6 mb-4">
+
+                    <h4>
+                        Opening Hours
+                    </h4>
+
+                    <ul class="list-unstyled mt-3">
+
+                        <li>
+                            Monday - Friday
+                        </li>
+
+                        <li>
+                            8:00 AM - 10:00 PM
+                        </li>
+
+                        <li class="mt-2">
+                            Saturday
+                        </li>
+
+                        <li>
+                            9:00 AM - 11:00 PM
+                        </li>
+
+                        <li class="mt-2">
+                            Sunday
+                        </li>
+
+                        <li>
+                            9:00 AM - 9:00 PM
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Follow Us -->
+
+                <div class="col-lg-3 col-md-6 mb-4">
+
+                    <h4>
+                        Follow Us
+                    </h4>
+
+                    <p class="mt-3">
+                        Stay connected with us on social media.
+                    </p>
+
+
+                    <ul class="list-unstyled mt-3">
+
+                        <li>
+                            <a href="#"
+                                class="text-white text-decoration-none">
+                                Facebook
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#"
+                                class="text-white text-decoration-none">
+                                Instagram
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#"
+                                class="text-white text-decoration-none">
+                                WhatsApp
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#"
+                                class="text-white text-decoration-none">
+                                Twitter
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <hr class="border-light">
+
+
+            <div class="text-center">
+
+                <p class="mb-0">
+
+                    © 2026 Coffee Culture.
+                    All Rights Reserved.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- ================= FOOTER END ================= -->
+
 
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"></script>
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous">
+    </script>
 
-      <!-- Footer Start -->
-      <section>
-<footer class="bg-dark text-white pt-5 pb-3 mt-5">
-  <div class="container">
-    <div class="row">
+</body>
 
-      <!-- Coffee Shop Info -->
-      <div class="col-lg-4 col-md-6 mb-4">
-        <h3 class="fw-bold">Coffee Culture</h3>
-        <p class="mt-3">
-         Coffee Culture <br>
-          123 FC Road,<br>
-          Shivajinagar, Pune,<br>
-          Maharashtra 411005, India
-        </p>
-
-        <p>
-           +91 98765 43210 <br>
-           hello@brewhaven.com
-        </p>
-      </div>
-
-      <!-- Quick Links -->
-      <div class="col-lg-2 col-md-6 mb-4">
-        <h4>Quick Links</h4>
-
-        <ul class="list-unstyled mt-3">
-          <li><a href="#" class="text-white text-decoration-none">Home</a></li>
-          <li><a href="#" class="text-white text-decoration-none">About</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Menu</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Services</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Gallery</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
-        </ul>
-      </div>
-
-      <!-- Opening Hours -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <h4>Opening Hours</h4>
-
-        <ul class="list-unstyled mt-3">
-          <li>Monday - Friday</li>
-          <li>8:00 AM - 10:00 PM</li>
-
-          <li class="mt-2">Saturday</li>
-          <li>9:00 AM - 11:00 PM</li>
-
-          <li class="mt-2">Sunday</li>
-          <li>9:00 AM - 9:00 PM</li>
-        </ul>
-      </div>
-
-      <!-- Follow Us -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <h4>Follow Us</h4>
-
-        <p class="mt-3">
-          Stay connected with us on social media.
-        </p>
-
-        <ul class="list-unstyled mt-3">
-          <li><a href="#" class="text-white text-decoration-none">Facebook</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Instagram</a></li>
-          <li><a href="#" class="text-white text-decoration-none">WhatsApp</a></li>
-          <li><a href="#" class="text-white text-decoration-none">Twitter</a></li>
-          
-        </ul>
-      </div>
-
-    </div>
-
-    <hr class="border-light">
-
-    <div class="text-center">
-      <p class="mb-0">
-        © 2026 Coffee Culture. All Rights Reserved.
-      </p>
-    </div>
-
-  </div>
-</footer>
-
-      </section>
-      <!-- Footer End -->
-
-<script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"></script>
-  </body>
 </html>
