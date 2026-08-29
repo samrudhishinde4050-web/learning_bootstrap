@@ -68,3 +68,80 @@ body {
     color: #C08A5A !important;
     font-weight: bold;
 }
+
+/* menu page */
+ /* ---------- PAGE STRUCTURE ---------- */
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100%;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1050;
+}
+        main {
+            flex: 1;
+        }
+
+        /* ---------- MENU ---------- */
+       
+
+        #menu {
+            background: #F8F4EF;
+            padding-top: 100px;
+    padding-bottom: 40px;
+        }
+
+        .menu-section h1 {
+            text-align: center;
+            font-family:"Brush Script MT", "Segoe Script", cursive;
+            font-size: 42px;
+            font-weight: bold;
+            color: #6F4E37;
+            margin: 40px 0 30px;
+        }
+
+        /* ---------- CARD ---------- */
+
+        .menu-section .card {
+            width: 100% !important;
+            height: 100%;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .menu-section .card-img-top {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card:hover {
+            background-color: black;
+            color: white;
+        }
+
+        /* ---------- ACTIVE NAV LINK ---------- */
+
+        .navbar .nav-link.active {
+            color: #C08A5A !important;
+            font-weight: bold;
+        }
+
+        /* ---------- FOOTER ---------- */
+
+        footer {
+            margin: 0 !important;
+        }
