@@ -1,5 +1,8 @@
 /* index page */
-
+body {
+    margin: 0;
+    padding-top: 76px;
+}
 
 .card {
     transition: 0.3s;
@@ -12,27 +15,23 @@
 }
 
         
-        #menu{
-    background: #F8F4EF;
-    padding:80px 0;
-}
-.navbar .nav-link.active {
-    color: #C08A5A !important;
-    font-weight: bold;
-}
-.mt-2 h2 {
-    font-family: "Brush Script MT", "Segoe Script", cursive;
-    color: #6F4E37;
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-}
- .navbar {
+       
+.navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 1050;
+}
+
+.navbar .nav-link.active {
+    color: #C08A5A !important;
+    font-weight: bold;
+}
+
+ #menu{
+    background: #F8F4EF;
+    padding:80px 0;
 }
 
 #menu h2,
@@ -42,6 +41,14 @@
     font-size: 48px;
     font-weight: bold;
 }
+.mt-2 h2 {
+    font-family: "Brush Script MT", "Segoe Script", cursive;
+    color: #6F4E37;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+ 
 .service-item {
     color: #6F4E37 !important;
     background-color: #F8F4EF !important;
@@ -53,4 +60,11 @@
 .service-item:hover {
     background-color: #6F4E37 !important;
     color: white !important;
+}
+
+
+/* about page */
+.navbar .nav-link.active {
+    color: #C08A5A !important;
+    font-weight: bold;
 }
