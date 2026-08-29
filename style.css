@@ -68,9 +68,17 @@ body {
     color: #C08A5A !important;
     font-weight: bold;
 }
+.about-card {
+    transition: 0.3s ease;
+}
+
+.about-card:hover {
+    border-bottom: 5px solid #6F4E37 !important;
+    transform: translateY(-5px);
+}
 
 /* menu page */
- /* ---------- PAGE STRUCTURE ---------- */
+ 
 
         html,
         body {
@@ -128,10 +136,23 @@ body {
             object-fit: cover;
         }
 
-        .card:hover {
-            background-color: black;
-            color: white;
-        }
+       .menu-card {
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.menu-card img {
+    transition: transform 0.4s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.menu-card:hover img {
+    transform: scale(1.08);
+}
 
         /* ---------- ACTIVE NAV LINK ---------- */
 
