@@ -1,11 +1,16 @@
 /* index page */
+
+
 .card {
     transition: 0.3s;
 }
 
 .card:hover {
     transform: rotate(-3deg) scale(1.03);
+    background-color: #6F4E37;
+    color: white;
 }
+
         
         #menu{
     background: #F8F4EF;
