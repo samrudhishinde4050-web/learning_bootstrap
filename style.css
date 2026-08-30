@@ -181,7 +181,23 @@ body {
 
 
     /* gallery page */
+    .navbar .nav-link.active {
+    color: #C08A5A !important;
+    font-weight: bold;
+}
+
+    .coffee-title {
+    font-family: "Brush Script MT", "Segoe Script", cursive;
+    color:black;
+    font-size: 40px;
+    font-weight: bold;
+}
    
+.card:hover .gallery-img {
+    transform: scale(1.05);
+   
+  }
+  
         .card:hover{
           background-color: black;
           color: white;
@@ -207,11 +223,23 @@ body {
     transition: 0.4s;
 }
 
-.card:hover .gallery-img {
-    transform: scale(1.05);
-   
-  }
-   .navbar .nav-link.active {
-    color: #C08A5A !important;
+.view-details-btn {
+    background-color: #6F4E37;
+    color: white;
+    border: 2px solid #6F4E37;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 16px;
     font-weight: bold;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+/* Hover */
+.view-details-btn:hover {
+    background-color: white;
+    color: #6F4E37;
+    border-color: #6F4E37;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(111, 78, 55, 0.35);
 }
