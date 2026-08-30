@@ -177,3 +177,41 @@ body {
         footer {
             margin: 0 !important;
         }
+
+
+
+    /* gallery page */
+   
+        .card:hover{
+          background-color: black;
+          color: white;
+        }
+        
+        #gallery{
+    background: #F8F4EF;
+    padding:40px 0;
+}
+
+    .menu-section h1 {
+        text-align: center;
+        font-family: "Brush Script MT", "Segoe Script", cursive;
+        font-size: 42px;
+        font-weight: bold;
+        color: #6F4E37;
+        margin: 40px 0 30px;
+    }
+    .gallery-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.card:hover .gallery-img {
+    transform: scale(1.05);
+   
+  }
+   .navbar .nav-link.active {
+    color: #C08A5A !important;
+    font-weight: bold;
+}
