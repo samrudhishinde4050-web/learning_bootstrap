@@ -19,6 +19,8 @@ body {
 ========================================================= */
 
 .navbar {
+    background-color: #3E2723 !important;
+    
     position: fixed !important;
     top: 0;
     left: 0;
