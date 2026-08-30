@@ -546,3 +546,198 @@ footer {
     }
 
 }
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background-color: #212529;
+}
+
+footer h3,
+footer h4 {
+    color: #ffffff;
+}
+
+
+/* =========================================
+   ADDRESS ICON
+========================================= */
+
+.address-icon {
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+    vertical-align: top;
+}
+/* =========================================
+   PHONE ICON
+========================================= */
+
+.phone-icon {
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+/* =========================================
+   EMAIL ICON
+========================================= */
+
+.email-icon {
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+}
+/* =========================================
+   PHONE & EMAIL TEXT
+========================================= */
+
+.contact-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    color: #ffffff;
+}
+
+
+/* =========================================
+   QUICK LINKS
+========================================= */
+
+.footer-links {
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 6px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.footer-links a:hover {
+    color: #d89b4a;
+    padding-left: 5px;
+}
+
+
+/* =========================================
+   OPENING HOURS
+========================================= */
+
+.opening-hours {
+    padding: 0;
+}
+
+.opening-hours li {
+    line-height: 1.7;
+}
+/* =========================================
+   SOCIAL ICONS
+========================================= */
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Remove bullet points */
+
+.social-icons li {
+    list-style: none;
+    display: inline-flex;
+}
+/* Icon links */
+
+.social-icons a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Common icon size */
+
+.social-icons i {
+    font-size: 30px;
+    transition: transform 0.3s ease;
+}
+
+
+/* =========================================
+   FACEBOOK
+========================================= */
+
+.social-icons .bi-facebook {
+    color: #1877F2;
+}
+
+/* =========================================
+   INSTAGRAM
+========================================= */
+
+.social-icons .bi-instagram {
+
+    background: linear-gradient(
+        45deg,
+        #FCAF45,
+        #F77737,
+        #E1306C,
+        #C13584,
+        #833AB4
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* =========================================
+   WHATSAPP
+========================================= */
+
+.social-icons .bi-whatsapp {
+    color: #25D366;
+}
+/* =========================================
+   TWITTER / X
+========================================= */
+
+.social-icons .bi-twitter {
+    color: #ffffff;
+}
+
+
+/* =========================================
+   SOCIAL ICON HOVER
+========================================= */
+
+.social-icons a:hover i {
+    transform: scale(1.2);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 991px) {
+
+    .social-icons {
+        margin-top: 15px;
+    }
+
+}
